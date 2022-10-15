@@ -24,6 +24,7 @@ class OccasionCard extends StatelessWidget {
           // TODO occasion onclick
         },
         child: Stack(
+          alignment: Alignment.center,
           children: [
             ClipRRect(
               borderRadius: BorderRadius.all(Radius.circular(16)),
@@ -35,6 +36,7 @@ class OccasionCard extends StatelessWidget {
               ),
             ),
             Container(
+              alignment: Alignment.center,
               child: Text(
                 occasion,
                 style: TextStyle(
@@ -42,6 +44,13 @@ class OccasionCard extends StatelessWidget {
                   fontSize: 24,
                   fontWeight: FontWeight.w700,
                   fontFamily: 'Inter',
+                  shadows: <Shadow>[
+                    Shadow(
+                      offset: Offset(1.0, 1.0),
+                      blurRadius: 30.0,
+                      color: Colors.black,
+                    ),
+                  ],
                 ),
               ),
             ),
