@@ -33,48 +33,45 @@ class _HomeScreenState extends State<HomeScreen> {
     return DefaultTabController(
       initialIndex: 0,
       length: 4,
-      child: ChangeNotifierProvider<Occasion>(
-        create: (context) => Occasion(),
-        child: Scaffold(
-          bottomNavigationBar: BottomNavigationBar(
-            currentIndex: _currentIndex,
-            onTap: (index) {
-              setState(() {
-                _currentIndex = index;
-              });
-            },
-            selectedItemColor: Colors.black,
-            unselectedItemColor: Colors.black,
-            unselectedLabelStyle: TextStyle(
-              color: Colors.black,
-              fontFamily: 'Inter',
-            ),
-            selectedLabelStyle: TextStyle(
-              color: Colors.black,
-              fontFamily: 'Inter',
-              fontWeight: FontWeight.w700,
-            ),
-            items: [
-              BottomNavigationBarItem(
-                icon: Icon(FontAwesomeIcons.bookOpen),
-                label: 'For you',
-              ),
-              BottomNavigationBarItem(
-                icon: Icon(FontAwesomeIcons.magnifyingGlass),
-                label: 'Explore',
-              ),
-              BottomNavigationBarItem(
-                icon: Icon(FontAwesomeIcons.bagShopping),
-                label: 'Shop',
-              ),
-              BottomNavigationBarItem(
-                icon: Icon(FontAwesomeIcons.solidUser),
-                label: 'Profile',
-              ),
-            ],
+      child: Scaffold(
+        bottomNavigationBar: BottomNavigationBar(
+          currentIndex: _currentIndex,
+          onTap: (index) {
+            setState(() {
+              _currentIndex = index;
+            });
+          },
+          selectedItemColor: Colors.black,
+          unselectedItemColor: Colors.black,
+          unselectedLabelStyle: TextStyle(
+            color: Colors.black,
+            fontFamily: 'Inter',
           ),
-          body: tabs[_currentIndex],
+          selectedLabelStyle: TextStyle(
+            color: Colors.black,
+            fontFamily: 'Inter',
+            fontWeight: FontWeight.w700,
+          ),
+          items: [
+            BottomNavigationBarItem(
+              icon: Icon(FontAwesomeIcons.bookOpen),
+              label: 'For you',
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(FontAwesomeIcons.magnifyingGlass),
+              label: 'Explore',
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(FontAwesomeIcons.bagShopping),
+              label: 'Shop',
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(FontAwesomeIcons.solidUser),
+              label: 'Profile',
+            ),
+          ],
         ),
+        body: tabs[_currentIndex],
       ),
     );
   }

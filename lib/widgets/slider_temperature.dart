@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+
+import '../models/occasion.dart';
 
 class TemperatureSlider extends StatefulWidget {
   @override
@@ -39,6 +42,8 @@ class _TemperatureSliderState extends State<TemperatureSlider> {
                     setState(
                       () {
                         temperature = newValue;
+                        Provider.of<Occasion>(context, listen: false)
+                            .setTemperature(newValue);
                       },
                     );
                   },

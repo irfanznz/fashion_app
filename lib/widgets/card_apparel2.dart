@@ -5,22 +5,18 @@ import 'package:provider/provider.dart';
 import '../models/occasion.dart';
 import '../screens/apparel.dart';
 
-class ApparelCard1 extends StatelessWidget {
-  ApparelCard1(
-      {required this.screenSize,
-      required this.name,
-      required this.occasion,
-      required this.temperature});
+class ApparelCard2 extends StatelessWidget {
+  ApparelCard2({
+    required this.screenSize,
+    required this.name,
+  });
 
   final Size screenSize;
   final String name;
-  final String occasion;
-  final String temperature;
 
   @override
   Widget build(BuildContext context) {
-    String imagePath =
-        'assets/images/clothes/${temperature}/${occasion.toLowerCase()}/${name}.jpg';
+    String imagePath = 'assets/images/clothes/${name}.jpg';
 
     return Container(
       decoration: BoxDecoration(
@@ -34,9 +30,7 @@ class ApparelCard1 extends StatelessWidget {
         ],
       ),
       child: GestureDetector(
-        onTap: () {
-          Navigator.pushNamed(context, ApparelScreen.id, arguments: imagePath);
-        },
+        onTap: () {},
         child: Stack(
           alignment: Alignment.center,
           children: [

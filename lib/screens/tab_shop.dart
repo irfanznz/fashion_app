@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../widgets/card_apparel1.dart';
+import '../widgets/card_apparel2.dart';
 
 class ShopTab extends StatelessWidget {
   @override
@@ -42,11 +43,11 @@ class ShopTab extends StatelessWidget {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        ApparelCard1(
+                        ApparelCard2(
                           name: 'denim1',
                           screenSize: screenSize,
                         ).spacedUp(),
-                        ApparelCard1(
+                        ApparelCard2(
                           name: 'denim2',
                           screenSize: screenSize,
                         ).spacedDown(),
@@ -55,11 +56,11 @@ class ShopTab extends StatelessWidget {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        ApparelCard1(
+                        ApparelCard2(
                           name: 'denim3',
                           screenSize: screenSize,
                         ).spacedUp(),
-                        ApparelCard1(
+                        ApparelCard2(
                           name: 'denim4',
                           screenSize: screenSize,
                         ).spacedDown(),
@@ -68,11 +69,11 @@ class ShopTab extends StatelessWidget {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        ApparelCard1(
+                        ApparelCard2(
                           name: 'denim5',
                           screenSize: screenSize,
                         ).spacedUp(),
-                        ApparelCard1(
+                        ApparelCard2(
                           name: 'brown2',
                           screenSize: screenSize,
                         ).spacedDown(),
@@ -81,11 +82,11 @@ class ShopTab extends StatelessWidget {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        ApparelCard1(
+                        ApparelCard2(
                           name: 'brown3',
                           screenSize: screenSize,
                         ).spacedUp(),
-                        ApparelCard1(
+                        ApparelCard2(
                           name: 'brown4',
                           screenSize: screenSize,
                         ).spacedDown(),
@@ -94,11 +95,11 @@ class ShopTab extends StatelessWidget {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        ApparelCard1(
+                        ApparelCard2(
                           name: 'brown1',
                           screenSize: screenSize,
                         ).spacedUp(),
-                        ApparelCard1(
+                        ApparelCard2(
                           name: 'brown5',
                           screenSize: screenSize,
                         ).spacedDown(),

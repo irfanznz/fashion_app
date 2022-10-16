@@ -57,6 +57,18 @@ flutter:
     - assets/
     - assets/images/
     - assets/images/clothes/
+    - assets/images/clothes/warm/office/
+    - assets/images/clothes/warm/formal/
+    - assets/images/clothes/warm/date/
+    - assets/images/clothes/warm/sport/
+    - assets/images/clothes/warm/city/
+    - assets/images/clothes/warm/travel/
+    - assets/images/clothes/cold/office/
+    - assets/images/clothes/cold/travel/
+    - assets/images/clothes/cold/sport/
+    - assets/images/clothes/cold/date/
+    - assets/images/clothes/cold/city/
+    - assets/images/clothes/cold/formal/
   fonts:
     - family: Inter
       fonts:
