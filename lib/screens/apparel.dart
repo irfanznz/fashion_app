@@ -1,5 +1,6 @@
 import 'package:brh_fashion_app/models/occasion.dart';
 import 'package:brh_fashion_app/screens/home.dart';
+import 'package:brh_fashion_app/screens/message.dart';
 import 'package:brh_fashion_app/screens/tab_explore.dart';
 import 'package:brh_fashion_app/screens/tab_home.dart';
 import 'package:brh_fashion_app/screens/tab_profile.dart';
@@ -73,8 +74,9 @@ class _ApparelScreenState extends State<ApparelScreen> {
                     ),
                     TextButton(
                       onPressed: () {
-                        Navigator.popUntil(
-                            context, ModalRoute.withName(HomeScreen.id));
+                        // Navigator.popUntil(
+                        //     context, ModalRoute.withName(HomeScreen.id));
+                        Navigator.pushNamed(context, MessageScreen.id);
                       },
                       child: Text(
                         'Yes',
@@ -105,8 +107,7 @@ class _ApparelScreenState extends State<ApparelScreen> {
                     ),
                     TextButton(
                       onPressed: () {
-                        Navigator.popUntil(
-                            context, ModalRoute.withName(HomeScreen.id));
+                        Navigator.pop(context);
                       },
                       child: Text(
                         'No',
